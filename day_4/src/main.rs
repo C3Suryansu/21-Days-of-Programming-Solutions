@@ -25,23 +25,23 @@ Outputs:
 #[macro_use]
 extern crate text_io;
 
-fn check_prime(num:i64){
-    if ((num as f64).sqrt().floor() - (num as f64).sqrt()) == 0.0{
-        print!("");
+fn check_prime(num: i64){
+    let mut c: i64 = 0;
+    for i in 2..(num/2) {
+        if num % i == 0 {
+            c = 2;
+            break;
+        }
     }
-    else if num == 2 || num == 3 {
-
-        print!("{} ",num);
-    }
-    else if ((num - 1) % 6 == 0) || ((num + 1) % 6 == 0) {
-        print!("{} ",num);
+    if c == 0{
+        print!("{} ", num);
     }
 }
 
 fn main() {
     let start:i64 = read!();
     let end:i64 = read!();
-    
+
     for _i in start..end{
         check_prime(_i);
     }
