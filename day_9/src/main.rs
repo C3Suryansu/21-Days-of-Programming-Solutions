@@ -29,6 +29,9 @@ fn main() {
     println!("Enter the number whose odd factors you want to find out: ");
     let num:i32 = read!();
     let mut sum:i32 = 0;
+    if num % 2 == 1{
+        sum += num;
+    }
     for i in 1..(num/2 + 1){
         if (num % i == 0) && (i % 2 == 1){
             sum += i;
