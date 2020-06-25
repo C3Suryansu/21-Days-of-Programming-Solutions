@@ -37,7 +37,10 @@ fn main() {
     let mut hh = h.parse::<i32>().unwrap();
     let length = date.len();
     let time = &date[length-2 .. length];
-    if time == "pm"{
+    if time == "am" && hh == 12{
+        hh = 0;
+    }
+    else if time == "pm"{
         hh = hh + 12;
     }
     let s = &date[length-4 .. length-2];
