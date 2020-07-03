@@ -1,31 +1,13 @@
 /*
-DAY 18:
-Write a program to count the minimum  number of steps to make a number divisible by another number.
-
+DAY 19:
+Find the probability of a perfect square occuring when a number is randomly choosen between numbers a and b over n iterations.
 Details:
-Given 2 numbers, a and b, count the minimum number of steps you need to increment or decrement a to make it divisible by b. 
-Each step means you can either add or subtract 1 from a.
-That is, a+1 or a-1 only
-
+Given 2 numbers, a and b, you have to find that, over n iterations,
+what is the probability that if a number is picked randomly in between a and b, it turns out to be a perfect square.
 Inputs:
-First line will have the number of test cases, n.
-In the next n lines, for each test case, Input two numbers a and b.
-
+Input numbers a, b and n.
 Outputs:
-N lines showing number of steps for each test case
-
-Sample:
-Inputs
-2
-7 3
-26 17
-Outputs:
-1
-8
-
-Explanation:-
-In the first case, we can subtract 1 from 7 once, to get 6 which is divisible by 3.
-In the second case, we can add 8 to 26 to make it 34, to make it divisible by 17.
+Print the probability in decimal
 */
 
 
